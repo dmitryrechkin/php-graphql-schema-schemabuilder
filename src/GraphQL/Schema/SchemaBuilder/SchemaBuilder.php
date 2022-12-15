@@ -42,9 +42,9 @@ class SchemaBuilder
 	 * sets schema config and returns itself
 	 *
 	 * @param SchemaConfig $schemaConfig
-	 * @return self
+	 * @return SchemaBuilder
 	 */
-	public function withSchemaConfig(SchemaConfig $schemaConfig): self
+	public function withSchemaConfig(SchemaConfig $schemaConfig): SchemaBuilder
 	{
 		$this->schemaConfig = $schemaConfig;
 		return $this;
@@ -54,9 +54,9 @@ class SchemaBuilder
 	 * sets type registry and returns itself
 	 *
 	 * @param TypeRegistryInterface $typeRegistry
-	 * @return self
+	 * @return SchemaBuilder
 	 */
-	public function withTypeRegistry(TypeRegistryInterface $typeRegistry): self
+	public function withTypeRegistry(TypeRegistryInterface $typeRegistry): SchemaBuilder
 	{
 		$this->typeRegistry = $typeRegistry;
 		return $this;
@@ -66,9 +66,9 @@ class SchemaBuilder
 	 * sets document node and returns itself
 	 *
 	 * @param DocumentNode $documentNode
-	 * @return self
+	 * @return SchemaBuilder
 	 */
-	public function withDocumentNode(DocumentNode $documentNode): self
+	public function withDocumentNode(DocumentNode $documentNode): SchemaBuilder
 	{
 		$this->documentNode = $documentNode;
 		return $this;
